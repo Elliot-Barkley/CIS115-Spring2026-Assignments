@@ -1,0 +1,15 @@
+# =========================
+# PROFESSIONAL BIO GENERATOR
+# =========================
+
+name = "Elliot Barkley"
+goal = "build software and improve my programming skills"
+birth_year = 2007
+current_year = 2026
+
+age = current_year - birth_year
+border = "=" * 25
+
+print(border)
+print(f"My name is {name} and I am {age} years old. My goal is to {goal}.")
+print(border)
