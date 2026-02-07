@@ -1,0 +1,14 @@
+# IMPORT STATEMENTS
+# (None)
+
+# FUNCTION DEFINITIONS
+# Define calculate_ticket(age, hour)
+# If age <= 12 or age >= 65, price = 8
+# Otherwise, price = 12
+# If hour < 17, subtract 2 from price
+# Print the final ticket price
+
+# PROGRAM LOGIC
+# Ask the user for age
+# Ask the user for the movie hour (24-hour format)
+# Call calculate_ticket
