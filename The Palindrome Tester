@@ -1,0 +1,14 @@
+# FUNCTION DEFINITIONS
+def is_palindrome(word):
+    word = word.lower()          # Make it case-insensitive
+    reversed_word = word[::-1]   # Reverse using slicing
+    return word == reversed_word # Return True or False
+
+# PROGRAM LOGIC
+user_word = input("Enter a word: ")
+result = is_palindrome(user_word)
+
+if result:
+    print(user_word + " is a palindrome.")
+else:
+    print(user_word + " is not a palindrome.")
