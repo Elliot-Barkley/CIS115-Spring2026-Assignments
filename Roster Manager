@@ -1,0 +1,23 @@
+def add_players(roster):
+roster.append("Jordan")
+    roster.append("Pippen")
+
+
+def is_on_roster(roster, player_name):
+    for player in roster:
+        if player.lower() == player_name.lower():
+            return True
+    return False
+
+roster = []
+
+add_players(roster)
+
+print("Current roster:", roster)
+
+search_name = input("Who would you like to search for? ")
+
+if is_on_roster(roster, search_name):
+    print("Result: Player found!")
+else:
+    print("Result: Player not found.")
