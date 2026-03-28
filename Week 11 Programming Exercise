@@ -1,0 +1,55 @@
+# FUNCTION DEFINITIONS
+
+def add_students(gradebook):
+    while True:
+        name = input("Enter student name (or 'done'): ")
+        
+        if name.lower() == "done":
+            break
+        
+        grade = float(input(f"Enter {name}'s grade: "))
+        gradebook[name] = grade
+
+
+def calculate_average(gradebook):
+    if len(gradebook) == 0:
+        return 0
+    
+    total = sum(gradebook.values())
+    average = total / len(gradebook)
+    return average
+
+
+# PROGRAM LOGIC
+
+gradebook = {}
+
+# Add students
+add_students(gradebook)
+
+# Calculate average
+average = calculate_average(gradebook)
+
+# Print report
+print("\n--- Class Report ---")
+for student, grade in gradebook.items():
+    print(f"{student}: {grade}")
+
+print(f"Class Average: {average:.2f}")
+
+
+# -------------------------
+# EXAMPLE OUTPUT
+# -------------------------
+"""
+Enter student name (or 'done'): Alice
+Enter Alice's grade: 95
+Enter student name (or 'done'): Bob
+Enter Bob's grade: 82
+Enter student name (or 'done'): done
+
+--- Class Report ---
+Alice: 95.0
+Bob: 82.0
+Class Average: 88.50
+"""
