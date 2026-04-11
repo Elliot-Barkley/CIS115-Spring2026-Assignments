@@ -1,0 +1,35 @@
+# NAME: journal.py
+
+def write_entry(filename, entry):
+    file = open(filename, 'a')
+    file.write(entry + '\n')
+    file.close()
+
+def read_journal(filename):
+    try:
+        file = open(filename, 'r')
+        print("\n--- Your Journal ---")
+        print(file.read())
+        file.close()
+    except FileNotFoundError:
+        print("\nNo journal entries found yet.\n")
+
+filename = "journal.txt"
+
+while True:
+    choice = input("(W)rite, (R)ead, or (Q)uit? ").lower()
+
+    if choice == 'w':
+        entry = input("Enter your entry: ")
+        write_entry(filename, entry)
+        print("Entry saved.\n")
+
+    elif choice == 'r':
+        read_journal(filename)
+
+    elif choice == 'q':
+        print("Goodbye!")
+        break
+
+    else:
+        print("Invalid option. Try again.\n")
