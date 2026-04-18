@@ -1,0 +1,21 @@
+# NAME: library.py
+# IMPORT STATEMENTS
+
+# CLASS DEFINITIONS
+
+class Book:
+    # __init__(title, author)
+    # set self.title = title
+    # set self.author = author
+    # set self.is_available = True
+
+    # __str__()
+    # if book is available → show "Available"
+    # else → show "Checked Out"
+    # return formatted string with title, author, and status
+
+    # checkout()
+    # set is_available to False
+
+    # return_book()
+    # set is_available to True
