@@ -1,0 +1,35 @@
+# Expense Tracker
+
+# Pseudocode:
+
+# 1. Create an empty list to store all expenses
+#    Each expense will be a dictionary:
+#    {
+#        "category": "",
+#        "vendor": "",
+#        "amount": 0.0,
+#        "date": ""
+#    }
+
+# 2. Create a main loop that keeps running until user chooses to exit
+
+# 3. Show menu:
+#    1. Add New Expense
+#    2. Get Totals
+#    3. Exit
+
+# 4. If user selects "Add":
+#    - Ask for category, vendor, amount, date
+#    - Convert amount to float
+#    - Store in dictionary
+#    - Add dictionary to list
+
+# 5. If user selects "Get Totals":
+#    - Show options:
+#        A: All expenses
+#        C: Filter by category
+#        V: Filter by vendor
+#    - Loop through list and calculate sum based on filter
+
+# 6. If user selects Exit:
+#    - Break loop and end program
